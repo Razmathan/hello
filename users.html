@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Students details table and graph</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in users %}
+          <tr>
+            {% for column in row %}
+              <td>{{ column }}</td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <img src="{{ url_for('static', filename='scatter.png') }}" alt="Histogram">
+    <img src="{{ url_for('static', filename='gender_pie_chart.png') }}" alt="Gender Pie Chart">
+  </body>
+</html>

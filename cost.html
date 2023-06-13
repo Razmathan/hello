@@ -1,0 +1,32 @@
+<!-- templates/cost.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Cost</title>
+</head>
+<body>
+    <h1>Predicted Prices</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Posted</th>
+                <th></th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row['Feature 1'] }}</td>
+                <td>{{ row['Feature 2'] }}</td>
+                <!-- Add more table cells for other features if needed -->
+                <td>{{ row['Predicted Price'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

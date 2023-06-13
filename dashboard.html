@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dashboard Page</title>
+    <style>
+      /* CSS styles */
+      body {
+        font-family: 'Times New Roman', Times, serif, sans-serif; /* Change font-family */
+      }
+      h1 {
+        color: blue; /* Change h1 text color to blue */
+      }
+      nav ul li {
+        color: rgb(214, 16, 16); /* Change nav list item text color to red */
+      }
+      p {
+        font-size: 18px; /* Change paragraph font size */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome, {{ user[1] }}!</h1>
+    <h1>DATASET</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('users') }}">Users graph</a></li>
+        <li><a href="{{ url_for('prediction') }}">House property</a></li>
+      </ul>
+    </nav>
+    <p>Dashboard for lecture.</p>
+  </body>
+</html>

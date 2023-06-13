@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediction cost</title>
+    <style>
+      /* CSS styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000000;
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        position: relative;
+        background-image: url("/static/back4.jpg"); /* Update the URL with the correct path to the background image */
+        background-repeat: repeat-x;
+        background-size: 100%; /* Adjust the value to zoom out the background image */
+        padding: 5px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .header-text {
+        font-size: 40px; /* Adjust the value to make the text bigger */
+        font-weight: bold; /* Apply bold font weight */
+      }
+      .container,
+      .container p,
+      .container h1 {
+        color: #ffffff !important;
+      }
+      .container {
+        max-width: 1300px;
+        color: #e20101;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 100vh;
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+      }
+      .image-grid img {
+        width: 100%;
+        height: auto;
+      }
+      .image-caption {
+        text-align: center;
+        margin-top: 10px;
+        color: #777;
+      }
+      .text-content {
+        margin-top: 20px;
+        color: #ffffff;
+        text-align: center;
+      }
+      .text-content1 {
+        margin-top: 20px;
+        color: #ffffff;
+        text-align: center;
+      }
+      .text-content1 a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        background-color: #ffffff;
+        color: #ff0000; /* Change link color to red (#ff0000) */
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+        animation: blink-animation 1s infinite;
+      } 
+
+      @keyframes blink-animation {
+      0% { opacity: 1; }
+      25% { opacity: 0.5; }
+      50% { opacity: 0; }
+      75% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-text">
+        <h2>Real Estate in India</h2>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Hello, Sungkyunkwan University</h1>
+      <h1>Welcome to My Website!</h1>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="{{ url_for('static', filename='image5.png') }}" alt="Image 1">
+          <div class="image-caption"></div>
+        </div>
+        <div class="image-item">
+          <img src="{{ url_for('static', filename='image2.jpg') }}" alt="Image 2">
+          <div class="image-caption"></div>
+        </div>
+        <div class="image-item">
+          <img src="{{ url_for('static', filename='image3.jpg') }}" alt="Image 3">
+          <div class="image-caption"></div>
+        </div>
+      </div>
+      <p class="text-content">
+        Increase in cost of construction coupled with pent up demand lifted housing prices by an average 7% across eight major cities in 2022, according to PropTiger.com data.
+
+
+        “The average housing prices increased 7% last year across eight major cities to ₹6,700 - 6,900 per square feet as compared with the 2021 calendar year," it said.
+       
+        As per our report Real Insight, the rise in prices of residential properties, however, did not impact sales during 2022 because of huge pent-up demand from the previous 
+        two years (2020 and 2021), which saw muted customer demand because of the Covid-19 pandemic.
+        
+        “Housing prices remained by and largely stable during the 2016-21 period. The year 2022 saw an appreciation in prices as the rates of key construction materials increased 
+        because of global headwinds like the Russia-Ukraine war. Strong revival in demand for both under-construction and ready to move in units also played a role in modest 
+        single digit increase in prices," said Vikas Wadhawan, Group CFO, PropTiger.com, Housing.com & Makaan.com
+      </p>
+       
+      <p class="text-content">      
+        
+        With the increase in the overall construction cost, builders were forced to raise the basic selling price of apartments, he added.
+        
+        According to the report, Gurugram saw highest price appreciation of about 13%, while Bengaluru and Delhi-NCR witnessed a 9% growth in prices, followed by Pune 8%. 
+        Ahmedabad and Kolkata 7% each.
+        
+        Housing prices in Ahmedabad rose by an average 7% year-on-year in 2022 to ₹3,600-3,800 per square feet.
+        
+        “Southern markets continue to rise wherein Bengaluru, the rates appreciated 9% to 6,000-6,200 per square feet. Similarly, Chennai also grew by close to 5% to 
+        5,600-5,800 per square feet. Since Hyderabad has already seen high double-digit growth in the last few years, the market seems to be seeing some plateau in terms of growth rate. 
+        Although the realty prices continue to rise in the city of Nawabs and grew by about 4% to ₹6,100-6,300 per square feet," it said.
+        
+        
+        In Delhi NCR, the prices of residential properties rose 9% to ₹4,800-5,000 per square feet. Among two major markets of Delhi-NCR, Gurugram saw a surge of 13% to 
+        ₹7,000-7,200 per square feet while Noida witnessed a growth of 7% to Rs. 5,400-5,600 per square feet.
+        
+        The prices appreciated by 7% in Kolkata to Rs. 4,600-4,800 per square feet, while Mumbai saw an increase of 5% in housing prices to ₹10,100-10,300 per square feet. 
+        The housing prices in Pune rose 8% to ₹5,500-5,700 per square feet in 2022 compared with the previous year.
+        
+        “We believe that housing prices will continue to grow in single digits during 2023 as demand continues to be strong. The input cost has eased a little bit, especially steel 
+        prices, but rates of other materials are still high," Wadhawan said.
+        
+        
+        The new supply is largely coming from trusted developers as demand is getting consolidated towards such builders to avoid risks.
+        
+        “Modest growth in prices is also healthy for the market as it will encourage investors to return to the housing market. In the last 6-7 years, the residential market has been 
+        largely dominated by end users but now we expect investors' interest to rise," he added.
+      </p>
+      <div class="text-content1">
+         <h2> View and Download Excel File<h2>
+         <a href="https://docs.google.com/spreadsheets/d/1aEPbBQeolfI85BT2mCpKv-d1v2aVXS6U/edit?usp=sharing&ouid=102718167977145552438&rtpof=true&sd=true" download>Click here!</a>
+      </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="{{ url_for('static', filename='Actual vs Predicted Prices.png') }}" alt="Actual vs Predicted Prices">
+          <div class="image-caption">Actual vs Predicted Prices</div>
+        </div>
+        <div class="image-item">
+          <img src="{{ url_for('static', filename='Predicted Prices Distribution.png') }}" alt="Predicted Prices Distribution">
+          <div class="image-caption">Predicted Prices Distribution</div>
+        </div>
+        <div class="image-item">
+          <img src="{{ url_for('static', filename='3D_Scatter_Plot_Animation.gif') }}" alt="3D Scatter Plot Animation">
+          <div class="image-caption">Predicted Prices Distribution</div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
